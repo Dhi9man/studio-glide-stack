@@ -47,26 +47,25 @@ const Hero = () => {
           className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent"
           variants={itemVariants}
         >
-          Alex Developer
+          Shubham Dhiman
         </motion.h1>
         
         <motion.div 
           className="text-xl md:text-2xl text-muted-foreground mb-8 font-mono"
           variants={itemVariants}
         >
-          <span className="text-accent">const</span>{' '}
+          {/* <span className="text-accent">_</span>{' '} */}
           <span className="text-primary">role</span>{' '}
           <span className="text-foreground">=</span>{' '}
-          <span className="text-yellow-400">"Full Stack Developer"</span>
-          <span className="text-foreground">;</span>
+          <span className="text-yellow-400">["Data Engineer","Data Analyst","Business Analyst"]</span>
+          {/* <span className="text-foreground">;</span> */}
         </motion.div>
 
         <motion.p 
           className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed"
           variants={itemVariants}
         >
-          I craft modern web experiences with clean code and innovative solutions. 
-          Passionate about React, TypeScript, and building scalable applications.
+          I design efficient data pipelines, analyze complex datasets, and deliver actionable insights that drive business decisions. Passionate about SQL, Python, and building scalable data solutions for real-world impact. Little bit of WEB DEV :D
         </motion.p>
 
         <motion.div 
