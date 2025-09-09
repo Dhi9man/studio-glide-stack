@@ -3,7 +3,8 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   const codeString = `// About.tsx
-interface Developer {
+
+interface DataProfessional {
   name: string;
   role: string;
   experience: number;
@@ -15,43 +16,44 @@ interface Developer {
   funFact: string;
 }
 
-const alexDeveloper: Developer = {
-  name: "Alex Developer",
-  role: "Full Stack Developer",
-  experience: 5,
-  location: "San Francisco, CA",
-  
+const shubhamProfile: DataProfessional = {
+  name: "Shubham Dhiman",
+  role: "Data Engineer | Data Analyst | Aspiring Data Scientist",
+  experience: 2, // adjust to your years of experience
+  location: "India",
+
   languages: [
-    "TypeScript", "JavaScript", "Python", 
-    "Go", "Rust", "SQL"
+    "Python", "SQL", "Scala", "JavaScript"
   ],
-  
+
   frameworks: [
-    "React", "Next.js", "Vue.js", "Node.js",
-    "Express", "FastAPI", "PostgreSQL"
+    "Django", "React", "Next.js", "Power BI", "Hadoop"
   ],
-  
+
   tools: [
-    "Docker", "AWS", "Git", "Figma",
-    "Webpack", "Vite", "Tailwind CSS"
+    "Pandas", "NumPy", "Scikit-learn", "TensorFlow",
+    "PyTorch", "Git", "Cloudera", "Docker"
   ],
-  
+
   currentFocus: [
-    "WebAssembly", "Three.js", "AI/ML",
-    "Serverless Architecture"
+    "Machine Learning", "Deep Learning", "Data Engineering Pipelines",
+    "Big Data (Hadoop/Cloudera)", "Anomaly Detection in Networks"
   ],
-  
-  funFact: "I debug with console.log() and I'm not ashamed! 🚀"
+
+  funFact: "I love turning raw data into insights, 
+  and I unwind by exploring strategy games! 🎮"
 };
 
-export default alexDeveloper;`;
+export default shubhamProfile;
+`;
 
   const skills = [
-    { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Three.js"] },
-    { category: "Backend", items: ["Node.js", "Python", "PostgreSQL", "Redis", "GraphQL"] },
-    { category: "Tools", items: ["Docker", "AWS", "Git", "Figma", "Webpack"] },
-    { category: "Currently Learning", items: ["Rust", "WebAssembly", "Machine Learning", "Blockchain"] }
-  ];
+  { category: "Data & Analytics", items: ["Python", "SQL", "Power BI", "Pandas", "NumPy"] },
+  { category: "Machine Learning", items: ["Scikit-learn", "TensorFlow", "PyTorch", "Anomaly Detection"] },
+  { category: "Big Data", items: ["Hadoop", "Cloudera", "Spark", "ETL Pipelines"] },
+  { category: "Currently Learning", items: ["Deep Learning", "Data Engineering at Scale", "Cloud Data Platforms"] }
+];
+
 
   return (
     <section id="about" className="section-padding bg-background">
@@ -95,8 +97,8 @@ export default alexDeveloper;`;
                 <pre className="text-xs leading-relaxed p-4 overflow-x-auto font-mono text-foreground bg-transparent">
                   <code dangerouslySetInnerHTML={{
                     __html: codeString
-                      .replace(/\/\/ .*/g, '<span class="text-muted-foreground">$&</span>')
-                      .replace(/interface|const|export|default/g, '<span class="text-accent">$&</span>')
+                      // .replace(/\/\/ .*/g, '<span class="text-muted-foreground">$&</span>')
+                      // .replace(/interface|const|export|default/g, '<span class="text-accent">$&</span>')
                       .replace(/"[^"]*"/g, '<span class="text-green-400">$&</span>')
                       .replace(/Developer|alexDeveloper/g, '<span class="text-primary">$&</span>')
                       .replace(/name|role|experience|location|languages|frameworks|tools|currentFocus|funFact/g, '<span class="text-yellow-400">$&</span>')
