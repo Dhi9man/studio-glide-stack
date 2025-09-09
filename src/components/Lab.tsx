@@ -16,31 +16,31 @@ const Lab = () => {
     },
     {
       id: 2,
-      title: "AI Code Generator",
-      description: "GPT-powered tool for generating React components from descriptions",
+      title: "ETL Pipeline Mini-Project",
+      description: "Small-scale Extract-Transform-Load (ETL) pipeline for moving raw CSV data into a structured PostgreSQL database.",
       icon: <Code2 className="w-6 h-6" />,
-      tech: ["OpenAI API", "Node.js", "React"],
-      status: "Complete",
+      tech: ["Python","PostgreSQL","Airflow"],
+      status: "Beta",
       link: "https://github.com"
     },
     {
       id: 3,
-      title: "CSS Art Gallery",
-      description: "Pure CSS animations and artwork showcase",
+      title: "Power BI Interactive Dashboard",
+      description: "An interactive dashboard built with Power BI, integrating multiple data sources to visualize KPIs and trends in real time.",
       icon: <Palette className="w-6 h-6" />,
-      tech: ["CSS", "HTML", "Animation"],
-      status: "Ongoing",
+      tech: ["Power BI", "DAX", "Data Visualization"," SQL"],
+      status: "Complete",
       link: "https://github.com"
     },
-    {
-      id: 4,
-      title: "Real-time Collaboration",
-      description: "WebRTC-based collaborative coding platform",
-      icon: <Zap className="w-6 h-6" />,
-      tech: ["WebRTC", "Socket.io", "React"],
-      status: "Beta",
-      link: "https://github.com"
-    }
+    // {
+    //   id: 4,
+    //   title: "Real-time Collaboration",
+    //   description: "WebRTC-based collaborative coding platform",
+    //   icon: <Zap className="w-6 h-6" />,
+    //   tech: ["WebRTC", "Socket.io", "React"],
+    //   status: "Beta",
+    //   link: "https://github.com"
+    // }
   ];
 
   const getStatusColor = (status: string) => {

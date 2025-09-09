@@ -10,28 +10,28 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Analytics Dashboard",
-      description: "Real-time analytics platform built with React, TypeScript, and D3.js. Features interactive charts and data visualization.",
+      title: "Network Anomaly Detection",
+      description: "Built a machine learning model to detect anomalies in network traffic for enhanced cybersecurity monitoring.",
       image: project1,
-      tech: ["React", "TypeScript", "D3.js", "Node.js"],
+      tech: ["PythonScikit-learn","Jupyter Notebook","Pandas","Machine Learning"],
       github: "https://github.com",
       live: "https://example.com"
     },
     {
       id: 2,
-      title: "Social Media App",
-      description: "Mobile-first social platform with real-time messaging, image sharing, and user authentication.",
+      title: "Amazon Sales Analysis",
+      description: "End-to-end data analysis project using Python and Power BI to uncover sales trends, customer insights, and performance metrics.",
       image: project2,
-      tech: ["React Native", "Firebase", "Redux", "Expo"],
+      tech: ["Python","Pandas","Matplotlib","Power BI"],
       github: "https://github.com",
       live: "https://example.com"
     },
     {
       id: 3,
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+      title: "Fuel Economy Data Analysis",
+      description: "Explored vehicle dataset to analyze fuel consumption patterns, emissions, and engine performance using data wrangling and visualization.",
       image: project3,
-      tech: ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+      tech: ["/Python","NumPy","Pandas","Seaborn"],
       github: "https://github.com",
       live: "https://example.com"
     }
@@ -63,7 +63,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
-            Featured Work
+            Work Highlights
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-mono">
             // A selection of my most impactful projects
@@ -114,10 +114,10 @@ const Projects = () => {
                       <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
                       Code
                     </Button>
-                    <Button size="sm" className="flex-1 bg-gradient-primary group/btn">
+                    {/* <Button size="sm" className="flex-1 bg-gradient-primary group/btn">
                       <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:translate-x-1 transition-transform" />
                       Live
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
