@@ -8,25 +8,25 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: <Github className="w-6 h-6" />,
-      url: 'https://github.com',
+      url: 'https://github.com/Dhi9man',
       description: 'Check out my code'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-6 h-6" />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/shubhamdhimann/',
       description: 'Let\'s connect professionally'
     },
     {
       name: 'Twitter',
       icon: <Twitter className="w-6 h-6" />,
-      url: 'https://twitter.com',
+      url: 'https://x.com/aurbhaiKrish',
       description: 'Follow my tech journey'
     },
     {
       name: 'Email',
       icon: <Mail className="w-6 h-6" />,
-      url: 'mailto:alex@example.com',
+      url: 'mailto:shubhamkrish966@gmail.com',
       description: 'Send me a message'
     }
   ];
@@ -127,7 +127,11 @@ const Contact = () => {
               <p className="text-muted-foreground mb-6 max-w-md mx-auto">
                 I'm always excited to work on new challenges and collaborate with talented people.
               </p>
-              <Button size="lg" className="bg-gradient-primary hover:scale-105 transition-transform">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary hover:scale-105 transition-transform"
+                onClick={() => window.location.href = 'mailto:shubhamkrish966@gmail.com'}
+              >
                 <Mail className="w-5 h-5 mr-2" />
                 Start a Conversation
               </Button>
@@ -135,7 +139,7 @@ const Contact = () => {
           </Card>
 
           <p className="text-muted-foreground text-sm font-mono">
-            // Built with ❤️ using React, TypeScript, and Framer Motion
+            See you around. 🍵
           </p>
         </motion.div>
       </div>

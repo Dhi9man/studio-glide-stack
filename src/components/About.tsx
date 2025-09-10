@@ -97,7 +97,7 @@ export default shubhamProfile;
                 <pre className="text-xs leading-relaxed p-4 overflow-x-auto font-mono text-foreground bg-transparent">
                   <code dangerouslySetInnerHTML={{
                     __html: codeString
-                      // .replace(/\/\/ .*/g, '<span class="text-muted-foreground">$&</span>')
+                      // .replace(/\/\/ .*/g, '<span class="text-muted-foreground">$&</span>')++
                       // .replace(/interface|const|export|default/g, '<span class="text-accent">$&</span>')
                       .replace(/"[^"]*"/g, '<span class="text-green-400">$&</span>')
                       .replace(/Developer|alexDeveloper/g, '<span class="text-primary">$&</span>')
@@ -154,10 +154,7 @@ export default shubhamProfile;
               <Card className="bg-gradient-primary/10 border-primary/20">
                 <CardContent className="p-6">
                   <p className="text-foreground leading-relaxed">
-                    When I'm not coding, you'll find me exploring new technologies, 
-                    contributing to open source projects, or experimenting with creative coding. 
-                    I believe in writing clean, maintainable code and creating user experiences 
-                    that make a difference.
+                    I turn caffeine into insights, bugs into features, and raw data into stories your boss can actually understand. 🧋
                   </p>
                 </CardContent>
               </Card>

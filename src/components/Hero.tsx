@@ -20,6 +20,25 @@ const Hero = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
 
+  const handleViewWork = () => {
+    const workSection = document.getElementById('work') || document.getElementById('projects') || document.getElementById('portfolio');
+    if (workSection) {
+      workSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleGithub = () => {
+    window.open('https://github.com/Dhi9man', '_blank'); // Replace with your actual GitHub URL
+  };
+
+  const handleLinkedin = () => {
+    window.open('https://www.linkedin.com/in/shubhamdhimann/', '_blank'); // Replace with your actual LinkedIn URL
+  };
+
+  const handleMail = () => {
+    window.location.href = 'mailto:shubhamkrish966@gmail.com';
+  };
+
   return (
     <section 
       id="home"
@@ -72,19 +91,38 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
           variants={itemVariants}
         >
-          <Button size="lg" className="group bg-gradient-primary hover:scale-105 transition-transform">
+          <Button 
+            size="lg" 
+            className="group bg-gradient-primary hover:scale-105 transition-transform"
+            onClick={handleViewWork}
+          >
             View My Work
             <ArrowDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
           </Button>
           
           <div className="flex gap-4">
-            <Button variant="outline" size="lg" className="hover:bg-secondary/50">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:bg-secondary/50"
+              onClick={handleGithub}
+            >
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="hover:bg-secondary/50">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:bg-secondary/50"
+              onClick={handleLinkedin}
+            >
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="hover:bg-secondary/50">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="hover:bg-secondary/50"
+              onClick={handleMail}
+            >
               <Mail className="h-5 w-5" />
             </Button>
           </div>

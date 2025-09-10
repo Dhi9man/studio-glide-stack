@@ -14,7 +14,7 @@ const Projects = () => {
       description: "Built a machine learning model to detect anomalies in network traffic for enhanced cybersecurity monitoring.",
       image: project1,
       tech: ["PythonScikit-learn","Jupyter Notebook","Pandas","Machine Learning"],
-      github: "https://github.com",
+      github: "https://github.com/Dhi9man/Anomaly-detection-in-network.git",
       live: "https://example.com"
     },
     {
@@ -110,7 +110,12 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1 group/btn">
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="flex-1 group/btn"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
                       <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
                       Code
                     </Button>
